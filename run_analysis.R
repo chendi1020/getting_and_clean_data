@@ -79,4 +79,4 @@ tide <- merge(tide, act_label, by.x = "activityId", by.y = "V1", all.x = T )
 tide <- tide %>% select(1:2,69,3:68)  %>% rename(activity=V2)
 
 #write out table 
-write.table(tide, "tidy.txt")
+write.table(tide, "tidy.txt" , row.names = F)
