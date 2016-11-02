@@ -1,9 +1,23 @@
- Transformation:
- All the values are means, aggregated over 30 subjects and 6 activities, resulting dataset is 180 rows by 69 columns
+#Analysis on Human Activity Recognition Using Smartphones
+The raw data for this analysis can be found here:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+
+# Transformation:
+## All the values are means, aggregated over 30 subjects and 6 activities, resulting dataset is 180 rows by 69 columns
  
+##Changes in variable names
+Several changes are made to the variable names to make them more readable
+- 'mean()' has been replaced by 'Mean'
+- 'std()' has been replaced by 'STD'
+- a 't' at the first position is replaced by 'Time'
+- a 'f' at the first position is replaced by 'Frequency'
+- dashes ('-') are left out
+- 'Acc' is written out fully as 'Accelerometer'
+- 'Gyro' is written out fully as 'Gyroscope'
+
+##Variable summary
  
- 
- Variable in the file
   activityId                                      : chr  "1" "1" "1" "1" ...
   subjectId                                       : chr  "1" "2" "3" "4" ...
   activity                                        : Factor w/ 6 levels "LAYING","SITTING",..: 4 4 4 4 4 4 4 4 4 4 ...
